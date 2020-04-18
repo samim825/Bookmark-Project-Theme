@@ -64,7 +64,7 @@
 </header>
 <div class="container">
     <br><br>
-    <a href="" class="btn btn-md btn-primary float-right">Add new </a><br>
+<button  class="btn btn-md btn-primary float-right" data-toggle="modal" data-target="#myModal">Add new</button><br>
   <table class="table table-hover table-bordered table-striped" id="myTable">
       <h4 align="center">Contact List</h4>
       <thead>
@@ -91,6 +91,49 @@
       </tbody>
   </table>
 </div>
+      
+      <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Add new Link</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+     <form action="#">
+            <div class="form-group">
+              <label for="link">Name :</label>
+              <input type="text" class="form-control" id="link" placeholder="Enter Link" name="name">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Mobile :</label>
+              <input type="text" class="form-control" id="details" placeholder="Write details about the link" name="mobile">
+            </div>
+             <div class="form-group">
+              <label for="pwd">E-mail :</label>
+              <input type="email" class="form-control" id="comment" placeholder="Give a comment" name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Address :</label>
+              <input type="text" class="form-control" id="comment" placeholder="Give a comment" name="address">
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 <footer>
     <div class="container-fluid ">
         <div class="row font-color" style="background-color: black;padding-top: 20px;padding-left: 30px;padding-bottom: 20px;">
